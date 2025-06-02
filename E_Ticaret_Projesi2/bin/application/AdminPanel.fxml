@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" stylesheets="@../../bin/application/application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminPanelController">
+   <children>
+      <Pane fx:id="anchor1" layoutX="16.0" layoutY="39.0" prefHeight="742.0" prefWidth="972.0" />
+      <Label layoutX="35.0" prefHeight="39.0" prefWidth="97.0" text="Yönetici Paneli">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Line endX="152.0" endY="45.5" layoutX="-9.0" layoutY="-9.0" startX="29.5" startY="45.5" stroke="#00000077" />
+      <TabPane layoutX="18.0" layoutY="54.0" prefHeight="632.0" prefWidth="954.0" style="-fx-tab-min-width: 218;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="profillladmin" style="white: 200;">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="962.0">
+                     <children>
+                        <Label layoutX="18.0" layoutY="180.0" prefHeight="51.0" prefWidth="193.0" text="Yönetici Bilgileri">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="243.0" prefHeight="16.0" prefWidth="31.0" text="Adı:">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="266.0" prefHeight="16.0" prefWidth="53.0" text="Soyadı:">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="293.0" prefHeight="16.0" prefWidth="64.0" text="E-Posta:">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="28.0" layoutY="319.0" prefHeight="16.0" prefWidth="64.0" text="Telefon:">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="372.0" prefHeight="16.0" prefWidth="82.0" text="Departman:">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="395.0" prefHeight="16.0" prefWidth="82.0" text="Unvanı:">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="348.0" prefHeight="16.0" prefWidth="82.0" text="Yönetici No:">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="135.0" layoutX="119.0" layoutY="231.0" startX="-100.0" stroke="#00000077" />
+                        <Label fx:id="adiLabel" layoutX="137.0" layoutY="243.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="soyadiLabel" layoutX="137.0" layoutY="266.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="emailLabel" layoutX="137.0" layoutY="293.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="telLabel" layoutX="137.0" layoutY="319.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adminIdLabel" layoutX="137.0" layoutY="348.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="depAdiLabel" layoutX="137.0" layoutY="372.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="unvanLabel" layoutX="137.0" layoutY="395.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="cikisbt" layoutX="436.0" layoutY="459.0" mnemonicParsing="false" onAction="#cikisbt_click" style="-fx-background-color: black;" text="Çıkış" textFill="WHITE" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../foto/icons8-user-96.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../foto/icons8-life-cycle-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+          <Tab>
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="gozatbutton" layoutX="119.0" layoutY="155.0" mnemonicParsing="false" onAction="#gozatbutton_click" prefHeight="30.0" prefWidth="86.0" text="resim ekle" />
+                        <Button fx:id="kaydetbutton" layoutX="726.0" layoutY="140.0" mnemonicParsing="false" onAction="#kaydetbutton_click" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: black;" text="Kaydet" textFill="WHITE" />
+                        <Button fx:id="silbutton" layoutX="605.0" layoutY="140.0" mnemonicParsing="false" onAction="#silbutton_click" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: black;" text="Sil" textFill="WHITE" />
+                        <Button fx:id="güncellebutton" layoutX="485.0" layoutY="140.0" mnemonicParsing="false" onAction="#güncellebutton_click" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: black;" text="Günelle" textFill="WHITE" />
+                        <ImageView fx:id="resim_yolu" fitHeight="134.0" fitWidth="148.0" layoutX="301.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+                        <TableView fx:id="tablos" layoutX="22.0" layoutY="276.0" onMouseClicked="#tablo_click" prefHeight="222.0" prefWidth="802.0">
+                           <columns>
+                              <TableColumn fx:id="ıdColumn" prefWidth="103.19998168945312" text="ID" />
+                              <TableColumn fx:id="kategoriColumn" prefWidth="324.00001525878906" text="Kategori Adi" />
+                              <TableColumn fx:id="resimColumn" prefWidth="376.00006103515625" text="Resim" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="kategori_tf" layoutX="88.0" layoutY="88.0" promptText="Kategori Adi" />
+                        <TextField fx:id="tf_ara" layoutX="423.0" layoutY="222.0" prefHeight="30.0" prefWidth="282.0" promptText="Ara" />
+                        <Button fx:id="arabutton" layoutX="732.0" layoutY="222.0" mnemonicParsing="false" onAction="#arabutton_click" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: black;" text="Ara" textFill="WHITE" />
+                     </children></AnchorPane>
+            </content>
+               <graphic>
+                  <ImageView fitHeight="57.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../foto/icons8-basket-100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Tab>
+            <Tab style="white: 200;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="962.0">
+                     <children>
+                        <Label layoutX="311.0" layoutY="163.0" text="Admin Adı : " />
+                        <Label layoutX="299.0" layoutY="201.0" text="Admin Soyadı : " />
+                        <Label layoutX="320.0" layoutY="285.0" text="E-Posta : " />
+                        <Label layoutX="341.0" layoutY="325.0" text="Şifre : " />
+                        <TextField fx:id="ad_güncelle" layoutX="423.0" layoutY="160.0" />
+                        <TextField fx:id="soyad_güncelle" layoutX="421.0" layoutY="199.0" />
+                        <TextField fx:id="eposta_güncelle" layoutX="423.0" layoutY="283.0" />
+                        <TextField fx:id="sifre_güncelle" layoutX="423.0" layoutY="322.0" />
+                        <Button fx:id="bt_guncelle" layoutX="382.0" layoutY="452.0" mnemonicParsing="false" onAction="#bt_guncelle_click" style="-fx-background-color: black;" text="Güncelle" textFill="WHITE" />
+                        <Label layoutX="300.0" layoutY="247.0" text="Eski E-Posta : " />
+                        <TextField fx:id="eskieposta" layoutX="421.0" layoutY="245.0" />
+                        <ImageView fitHeight="156.0" fitWidth="120.0" layoutX="363.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../foto/icons8-user-96.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../foto/icons8-profile-settings-56.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+            <Tab style="white: 200;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="962.0">
+                     <children>
+                        <Label fx:id="adiLabel1" layoutX="448.0" layoutY="174.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="soyadiLabel1" layoutX="448.0" layoutY="197.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="emailLabel1" layoutX="448.0" layoutY="224.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="telLabel1" layoutX="448.0" layoutY="250.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="adminIdLabel1" layoutX="448.0" layoutY="279.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="depAdiLabel1" layoutX="448.0" layoutY="303.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="unvanLabel1" layoutX="448.0" layoutY="326.0" prefHeight="16.0" prefWidth="256.0">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="satici_bilgi" layoutX="19.0" layoutY="224.0" prefHeight="264.0" prefWidth="858.0">
+                          <columns>
+                            <TableColumn fx:id="satici_id_show" prefWidth="129.5999984741211" text="ID" />
+                            <TableColumn fx:id="satici_kod_show" prefWidth="119.20004272460938" text="SATICI KOD" />
+                              <TableColumn fx:id="ad_show" prefWidth="119.20004272460938" text="AD" />
+                              <TableColumn fx:id="soyad_show" prefWidth="119.20004272460938" text="SOYAD" />
+                              <TableColumn fx:id="email_show" prefWidth="119.20004272460938" text="E-MAİL" />
+                              <TableColumn fx:id="sifre_show" prefWidth="119.20004272460938" text="ŞİFRE" />
+                              <TableColumn fx:id="bloklu_show" prefWidth="119.20004272460938" text="BLOKLU" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="tf_ara1" layoutX="507.0" layoutY="167.0" prefHeight="30.0" prefWidth="282.0" promptText="Ara" />
+                        <Button fx:id="arabutton1" layoutX="793.0" layoutY="167.0" mnemonicParsing="false" onAction="#arabutton_click1" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: black;" text="Ara" textFill="WHITE" />
+                        <Button fx:id="bloklaButton" layoutX="113.0" layoutY="117.0" mnemonicParsing="false" onAction="#bloklaClicked" prefHeight="53.0" prefWidth="67.0" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../foto/icons8-denied-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="unblockButton" layoutX="205.0" layoutY="120.0" mnemonicParsing="false" onAction="#unblockedClicked" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="46.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../foto/icons8-checked-user-male-48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Label layoutX="128.0" layoutY="174.0" text="Blokla" />
+                        <Label layoutX="199.0" layoutY="174.0" text="Blok Kaldır" />
+                     </children>
+                  </AnchorPane>
+               </content>
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../foto/icons8-denied-96.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </opaqueInsets>
+      </TabPane>
+   </children>
+</AnchorPane>

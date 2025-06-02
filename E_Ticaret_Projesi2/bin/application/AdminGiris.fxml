@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminGirisController">
+   <children>
+      <ImageView fitHeight="326.0" fitWidth="326.0" layoutX="62.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../foto/sunuum.logo.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="535.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Oturumu Aç" wrappingWidth="229.09136962890625">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="email_tf" layoutX="539.0" layoutY="197.0" prefHeight="28.0" prefWidth="222.0" promptText="E-posta adresinizi giriniz" style="-fx-background-color: white; -fx-border-width: 0 0 1px 0; -fx-border-style: solid;">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></TextField>
+      <Button fx:id="GirisButton" layoutX="536.0" layoutY="317.0" mnemonicParsing="false" onAction="#GirisButton_click" prefHeight="26.0" prefWidth="229.0" style="-fx-background-color: black;" text="Giriş" textFill="WHITE" />
+      <Button fx:id="BackButton" layoutX="36.0" layoutY="31.0" mnemonicParsing="false" onAction="#BackButton_click" prefHeight="51.0" prefWidth="68.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="44.0">
+               <image>
+                  <Image url="@../../foto/icons8-back-64.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Text fx:id="geri_button" layoutX="51.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="38.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="92.0" layoutY="22.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="38.0" style="-fx-background-color: white;" />
+      <StackPane layoutX="534.0" layoutY="250.0" prefHeight="37.0" prefWidth="234.0">
+         <children>
+            <TextField fx:id="shownPassword" cache="true" prefHeight="25.0" prefWidth="245.0" style="-fx-padding: 5px; -fx-border-width: 0 0 1px 0; -fx-border-style: solid; -fx-background-color: white;" />
+            <PasswordField fx:id="sifre_pf" prefHeight="25.0" prefWidth="245.0" promptText="Şifre" style="-fx-padding: 5px; -fx-background-color: white; -fx-border-width: 0 0 1px 0; -fx-border-style: solid;" />
+         </children>
+      </StackPane>
+      <Button fx:id="toggleButton" layoutX="779.0" layoutY="251.0" mnemonicParsing="false" onAction="#toggleButton_click" prefHeight="25.0" prefWidth="30.0" style="-fx-background-color: white;" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../foto/password_eye.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxWidth="500.0" minWidth="500.0" prefHeight="659.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OdemeController">
+    <children>
+
+        <Label layoutX="68.0" layoutY="395.0" text="Kart No:" />
+        <TextField fx:id="kartNoField" layoutX="133.0" layoutY="391.0" prefHeight="26.0" prefWidth="300.0" />
+
+        <Button fx:id="sipaiş" layoutX="367.0" layoutY="501.0" onAction="#siparisiTamamla" style="-fx-background-color: black;" text="Siparişi Tamamla" textFill="WHITE" />
+      <Label layoutX="299.0" layoutY="442.0" text="CVV:" />
+      <TextField fx:id="cvv" layoutX="355.0" layoutY="438.0" prefHeight="17.0" prefWidth="57.0" />
+
+      <Label layoutX="90.0" layoutY="442.0" text="kart tarihi girin" />
+      <TextField fx:id="karttarihi" layoutX="188.0" layoutY="438.0" prefHeight="25.0" prefWidth="77.0" />
+      <TextField fx:id="kartisim" layoutX="133.0" layoutY="359.0" prefHeight="25.0" prefWidth="300.0" />
+      <Label layoutX="68.0" layoutY="364.0" text="Kart Sahibi:" />
+      <Text layoutX="29.0" layoutY="598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ücretsiz Kargo">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="160.0" layoutY="598.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para İadesi">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="258.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Güvenli Ödemeler">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="386.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7/24 Destek">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="GREY" layoutX="26.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200 tl üzeri sipariş" />
+      <Text fill="GREY" layoutX="155.0" layoutY="629.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30 gün garanti" />
+      <Text fill="GREY" layoutX="260.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAZARIUM tarafından güvence altına alınmıştır" wrappingWidth="110.20785522460938" />
+      <Text fill="GREY" layoutX="382.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefon ve E_posta desteği " wrappingWidth="92.52325439453125" />
+      <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="26.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../foto/icons8-cargo-truck-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="155.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../foto/icons8-money-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="258.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../foto/icons8-lock-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="38.0" layoutX="382.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../foto/icons8-phone-100.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="15.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAZARIUM" wrappingWidth="77.373046875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="anasayfa_button" layoutX="140.0" layoutY="15.0" mnemonicParsing="false" onAction="#anasayfa_button_click" style="-fx-background-color: white;" text="Ana Sayfa" />
+      <Button fx:id="kategoriler_button" layoutX="240.0" layoutY="15.0" mnemonicParsing="false" onAction="#kategoriler_button_click" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: white;" text="Kategoriler" />
+      <Button fx:id="sepet" layoutX="390.0" layoutY="10.0" mnemonicParsing="false" onAction="#sepet_button" prefHeight="24.0" prefWidth="34.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../foto/icons8-basket-100.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="profil" layoutX="450.0" layoutY="15.0" mnemonicParsing="false" onAction="#profil_button" prefHeight="15.0" prefWidth="34.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../foto/icons8-user-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="ülke" layoutX="28.0" layoutY="93.0" text="Ülke :" />
+      <Label layoutX="27.0" layoutY="124.0" text="İl :" />
+      <Label layoutX="27.0" layoutY="159.0" text="İlçe :" />
+      <Label layoutX="27.0" layoutY="296.0" text="Posta Kodu :" />
+      <Label layoutX="26.0" layoutY="192.0" text="Mahalle :" />
+      <Label layoutX="27.0" layoutY="222.0" text="Adres :" />
+      <TextField fx:id="ulke" layoutX="81.0" layoutY="89.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="il" layoutX="81.0" layoutY="120.0" />
+      <TextField fx:id="ilçe" layoutX="81.0" layoutY="152.0" />
+      <TextField fx:id="Mahalle" layoutX="81.0" layoutY="184.0" />
+      <TextField fx:id="Adres" layoutX="81.0" layoutY="218.0" prefHeight="60.0" prefWidth="288.0" />
+      <TextField fx:id="postaKodu" layoutX="98.0" layoutY="288.0" />
+      <ImageView fitHeight="133.0" fitWidth="149.0" layoutX="310.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../foto/sunuum.logo.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
